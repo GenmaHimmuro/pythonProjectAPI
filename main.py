@@ -3,7 +3,7 @@ import requests
 
 def main():
     places = ['аэропорт Шереметьево', 'Лондон', "Череповец"]
-    payload = {'lang=ru':'','M':'','n':'','q':'','T':''}
+    payload = {'lang':'ru','M':'','n':'','q':'','T':''}
     for place in places:
         url = 'https://wttr.in/{}'.format(place)
         response = requests.get(url, params=payload)
